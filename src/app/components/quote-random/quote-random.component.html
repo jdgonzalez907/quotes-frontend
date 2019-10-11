@@ -1,4 +1,11 @@
-<button mat-flat-button [color]="'primary'" (click)="generateRandomQuote()">Genera una frase <mat-icon>loop</mat-icon></button>
+<button
+    class="mat-elevation-z4"
+    mat-flat-button
+    [color]="'primary'"
+    [disabled]="disabledRandomButton"
+    (click)="generateRandomQuote()">
+    Genera una frase <mat-icon>loop</mat-icon>
+</button>
 <br/>
 <div *ngIf="quoteModel">
     <h3>{{quoteModel.quote}}</h3>

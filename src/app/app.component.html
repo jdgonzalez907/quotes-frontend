@@ -1,9 +1,13 @@
 <div class="wrapper">
-    <h1 class="text-center">Quotes</h1>
+    <h1 class="text-center">Frases</h1>
     <div class="row">
         <div class="column">
             <mat-card>
-                <app-quote-random (randomEvent)="generateRandomQuote()" [quoteModel]="quoteModel"></app-quote-random>
+                <app-quote-random
+                    [quoteModel]="quoteModel"
+                    [disabledRandomButton]="disabledRandomButton"
+                    (randomEvent)="generateRandomQuote()">
+                </app-quote-random>
             </mat-card>
         </div>
         <div class="column">

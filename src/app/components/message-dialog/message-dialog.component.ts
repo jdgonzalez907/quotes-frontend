@@ -10,11 +10,15 @@ export class MessageDialogComponent {
 
   constructor(
     private dialogRef: MatDialogRef<MessageDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: string
+    @Inject(MAT_DIALOG_DATA) public data: MessageDialog
   ) { }
 
   onCancel(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(false);
+  }
+
+  onConfirm(): void {
+    this.dialogRef.close(true);
   }
 
 }

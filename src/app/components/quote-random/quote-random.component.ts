@@ -8,6 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class QuoteRandomComponent {
 
   @Input() quoteModel: Quote;
+  @Input() disabledRandomButton: boolean;
   @Output() randomEvent = new EventEmitter();
 
   constructor() { }
