@@ -11,7 +11,7 @@
                 <app-quote-list
                     [dataSource]="dataSource"
                     [displayedColumns]="displayedColumns"
-                    (quoteViewEvent)="viewQuote($event)"
+                    (quoteViewEvent)="getQuote($event)"
                     (quoteDeleteEvent)="deleteQuote($event)">
                 </app-quote-list>
             </mat-card>

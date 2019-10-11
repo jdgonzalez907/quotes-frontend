@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { QuoteListComponent } from './components/quote-list/quote-list.component';
 import { QuoteRandomComponent } from './components/quote-random/quote-random.component';
+import { MessageDialogComponent } from './components/message-dialog/message-dialog.component';
 
 // import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import {MatCheckboxModule} from '@angular/material';
@@ -31,11 +33,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 // import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 // import {MatProgressBarModule} from '@angular/material/progress-bar';
-// import {MatDialogModule} from '@angular/material/dialog';
+import {MatDialogModule} from '@angular/material/dialog';
 // import {MatTooltipModule} from '@angular/material/tooltip';
 // import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
-import { HttpClientModule } from '@angular/common/http';
 // import {MatSortModule} from '@angular/material/sort';
 // import {MatPaginatorModule} from '@angular/material/paginator';
 
@@ -43,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     QuoteListComponent,
-    QuoteRandomComponent
+    QuoteRandomComponent,
+    MessageDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatCardModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    MessageDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
