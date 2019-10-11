@@ -1,0 +1,3 @@
+interface ResultMessageResponse {
+    message: string;
+}

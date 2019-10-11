@@ -1,0 +1,6 @@
+<button mat-flat-button [color]="'primary'" (click)="generateRandomQuote()">Genera una frase <mat-icon>loop</mat-icon></button>
+<br/>
+<div *ngIf="quoteModel">
+    <h3>{{quoteModel.quote}}</h3>
+    <img class="img" [src]="quoteModel.image" [alt]="quoteModel.quote">
+</div>
