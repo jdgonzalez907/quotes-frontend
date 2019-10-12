@@ -1,27 +1,32 @@
 # QuotesFrontend
+Proyecto realizado para la creación de frases aleatoriamente con su respectiva imagen.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+## Tecnologías usadas
+- Angular 7.2.15
+- Angular cli 7.3.8
 
-## Development server
+## Instalación
+Para instalar el proyecto debes tener configurado primeramente [Angular CLI](https://github.com/angular/angular-cli).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Al tener listo lo anterior podemos ejecutar los siguientes pasos:
+1. Clonar el proyecto desde [GitLab.com](https://gitlab.com/jdgonzalez907/quotes-frontend "GitLab.com")  con el siguiente comando.
+```shell
+git clone git@gitlab.com:jdgonzalez907/quotes-frontend.git
+```
+2. Abrir el proyecto con [Visual Studio Code](https://code.visualstudio.com/) y ejecutar desde la consola de comandos lo siguiente para descargar y actualizar dependencias.
+```shell
+npm install
+```
+3.  Para poner en funcionamiento la aplicación, ejecute:
+```
+ng serve
+```
 
-## Code scaffolding
+## Uso
+- Ingresar a la app `http://localhost:4200/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Hecho por [@jdgonzalez907](https://www.linkedin.com/in/jdgonzalez907/ "@jdgonzalez907")
